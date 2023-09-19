@@ -71,7 +71,7 @@ class ProfileScreen extends StatelessWidget {
                 Expanded(
                     child: ListView.builder(
                   scrollDirection: Axis.vertical,
-                  itemCount: 2,
+                  itemCount: 1,
                   itemBuilder: (context, index) {
                     return VideoPlayerWidget(videoUrl: "YOUR_VIDEO_URL_HERE");
                   },

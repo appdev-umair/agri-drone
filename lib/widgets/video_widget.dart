@@ -1,3 +1,4 @@
+import 'package:agridrone_app/screens/video_player_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
@@ -44,7 +45,18 @@ class VideoPlayerWidget extends StatelessWidget {
                         child: Row(children: [
                           CircleAvatar(
                             child: IconButton(
-                                onPressed: () {}, icon: Icon(Icons.play_arrow)),
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => VideoPlayerView(
+                                              dataSourceType:
+                                                  DataSourceType.asset,
+                                              url: "assets/video.mp4",
+                                            )),
+                                  );
+                                },
+                                icon: Icon(Icons.play_arrow)),
                           ),
                           Padding(
                             padding:

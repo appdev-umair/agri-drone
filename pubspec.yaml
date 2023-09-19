@@ -37,8 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   permission_handler: ^10.4.3
   camera: ^0.10.5+3
-  video_player: ^2.7.0
+  video_player: ^2.7.2
   webview_flutter: ^2.0.14
+  url_launcher: ^6.0.12
+  chewie: ^1.7.1
 
 dev_dependencies:
   flutter_test:
